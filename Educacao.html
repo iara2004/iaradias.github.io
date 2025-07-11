@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Educação - Iara</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Educacao.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo">Iara</div>
+        <nav>
+            <a href="Pagina Principal.html"> Ínicio </a>
+            <a href="#"> Projetos </a>
+            <a href="#"> Experiencia </a>
+            <a href="Educacao.html"> Educação </a>
+            <a href="#contact" class="contact-btn">Contacto</a>
+        </nav>
+        <div class="hamburger" onClick="toggleMobileNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="Pagina Principal.html"> Ínicio </a>
+        <a href="#"> Projetos </a>
+        <a href="#"> Experiencia </a>
+        <a href="Educacao.html"> Educação </a>
+        <a href="#"> Contacto </a>
+    </div>
+
+<section class="educacao-section body1">
+    <h1>O Meu Percurso Escolar</h1>
+    <div class="educacao-content">
+        <div class="resumo-escolar">
+            <p>
+                O meu percurso académico não foi fácil. Fui trabalhadora-estudante, o que me trouxe várias dificuldades, mas consegui manter-me firme. No final, os esforços valeram a pena, e o resultado foi muito positivo. A Escola Profissional do Montijo foi um ponto de viragem na minha vida. Foi graças a ela que me tornei quem sou hoje. A Iara que entrou naquela escola no primeiro dia não é a mesma que saiu no final. Sai uma pessoa muito mais forte, tanto no aspecto pessoal quanto nos meus conhecimentos e aptidões. A escola profissional não só me formou academicamente, mas transformou a minha vida para melhor.
+            </p>
+        </div>
+        
+        <div class="escola-imagem">
+            <img src="img/EPM.jpg" alt="Escola Profissional do Montijo">
+        </div>
+    </div>
+
+    <div class="gpsi-info-container">
+        <h2>GPSI 2022/2025</h2>
+        <div class="gpsi-info">
+        <p>
+            O curso de <strong>Gestão e Programação de Sistemas Informáticos (GPSI)</strong> tem sido uma excelente oportunidade para expandir os meus conhecimentos na área de tecnologia. Durante os três anos de formação, tive contato com diversas linguagens de programação, como Python, JavaScript, SQL, C# e muito mais, além de aprender a trabalhar com ferramentas modernas de desenvolvimento.
+        </p>
+        </div>
+    </div>
+
+    <div class="linguagens">
+        <div class="linguagem">
+            <img src="img/d1d1d.png" alt="Python">
+            <p>Python</p>
+        </div>
+        <div class="linguagem">
+            <img src="img/d2d2d.png" alt="SQL">
+            <p>SQL</p>
+        </div>
+        <div class="linguagem">
+            <img src="img/d3d3d.png" alt="JavaScript">
+            <p>JavaScript</p>
+        </div>
+        <div class="linguagem">
+            <img src="img/d4d4d.png" alt="C#">
+            <p>C#</p>
+        </div>
+    </div>
+
+    <h2>Primeiro Estágio - Escola Poeta Joaquim Serra</h2>
+    <p>
+        O meu primeiro estágio foi realizado na <strong>Escola Poeta Joaquim Serra</strong>, onde tive a oportunidade de aplicar os conhecimentos adquiridos na escola em situações reais.
+        Durante este estágio, aprendi muito sobre a prática da programação, a importância do trabalho em equipa e a resolução de problemas no dia a dia.
+        A minha performance foi avaliada com a nota final de <strong>18 valores</strong>.
+    </p>
+
+    <h2>Segundo Estágio - Sourcing Trust</h2>
+    <p>
+        O segundo estágio aconteceu na empresa <strong>Sourcing Trust</strong>, onde trabalhei mais de perto com a tecnologia e programação para o desenvolvimento de soluções empresariais.
+        Foi um estágio extremamente enriquecedor, onde aprendi a importância da análise de sistemas e da implementação de soluções práticas.
+        A avaliação final deste estágio foi de <strong>15 valores</strong>.
+    </p>
+
+    <h2>Conclusão e PAP</h2>
+    <p>
+        O meu percurso escolar foi marcado por grandes aprendizados, tanto em termos técnicos como profissionais. A realização da <strong>Prova de Aptidão Profissional (PAP)</strong>, que recebi a nota máxima de <strong>20 valores</strong>, foi o culminar deste processo.
+        Este projeto demonstrou a minha capacidade de aplicar os conhecimentos adquiridos ao longo do curso e c
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script>
+        function toggleMobileNav(){
+            const hamburger = document.querySelector('.hamburger');
+            const mobileNav = document.getElementById('mobileNav');
+
+            hamburger.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        }
+
+        document.addEventListener('click', function(event){
+            const mobileNav = document.getElementById('mobileNav');
+            const hamburger = document.querySelector('.hamburger');
+
+            if(mobileNav.classList.contains('active') &&
+               !mobileNav.contains(event.target) &&
+               !hamburger.contains(event.target)) {
+                toggleMobileNav();
+            }
+        });
+    </script>
+
+</body>
+</html>
