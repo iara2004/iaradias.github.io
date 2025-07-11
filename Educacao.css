@@ -278,7 +278,7 @@ nav a:hover {
 
 .body1 {
     padding-top: 7rem;
-    margin-bottom: 3rem; /* Espaço adicional abaixo de toda a seção */
+    margin-bottom: 3rem; 
 }
 
 .body1 h1{
@@ -287,31 +287,31 @@ nav a:hover {
     font-size: 2rem;
 }
 
-/* Estilo para as cards */
+
 .container-card-1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
     padding-top: 2rem;
-    margin-bottom: 13rem; /* Adicionando espaço abaixo dos cards */
+    margin-bottom: 13rem;
 }
 
-/* Ajuste para as cards */
+
 .cards {
     display: flex;
-    flex-direction: column; /* Alinha o conteúdo verticalmente */
-    align-items: center; /* Centraliza os elementos dentro da card */
-    gap: 1rem; /* Adiciona um espaçamento entre a imagem e o botão */
-    width: 200px; /* Define uma largura fixa para as cards */
+    flex-direction: column; 
+    align-items: center;
+    gap: 1rem; 
+    width: 200px;
 }
 
-/* Estilo da imagem dentro das cards */
+
 .cards img {
     width: 150px;
     height: 170px;
     transition: 0.35s ease;
-    object-fit: cover; /* Garante que a imagem se ajuste bem ao espaço */
+    object-fit: cover; 
 }
 
 .cards img:hover {
@@ -319,7 +319,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* Estilo do botão dentro das cards */
+
 .cards button {
     padding: 12px 30px;
     background: var(--primary);
@@ -358,31 +358,32 @@ nav a:hover {
 .educacao-section h1 {
     text-align: center;
     color: var(--primary);
-    margin-bottom: 1.5rem;
+    margin-top: 4.5rem;
+    margin-bottom: 2.5rem;
 }
 
-/* Centralizando o container do título e do conteúdo */
+
 .gpsi-info-container {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Alinha os itens no centro horizontalmente */
-    justify-content: center;  /* Alinha os itens no centro verticalmente */
-    height: auto;  /* Ajusta a altura para o conteúdo */
+    align-items: center; 
+    justify-content: center; 
+    height: auto; 
     text-align: center;
 }
 
-/* Estilo do título */
-h2 {
-    font-size: 2rem;  /* Ajuste o tamanho conforme necessário */
+
+.gpsi-info-container h2 {
+    font-size: 2rem; 
     font-weight: bold;
-    color: var(--primary);  /* Ajuste a cor conforme necessário */
-    margin-bottom: 1.5rem;  /* Reduz a margem inferior para diminuir o espaço */
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    margin-top: 4.5rem; 
 }
 
-/* Estilo da div com o conteúdo */
 .gpsi-info {
-    /* Adicione estilos que achar necessários */
-    margin-top: 0.5rem; /* Reduz a margem superior */
+
+    margin-top: 0.5rem; 
 }
 
 
