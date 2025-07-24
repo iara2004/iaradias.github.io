@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
     --bg-light: #fdf6f0;          /* Fundo claro */
     --primary: #f7b7a3;           /* Rosa pêssego pastel */
